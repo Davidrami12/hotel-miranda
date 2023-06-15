@@ -1,0 +1,25 @@
+{
+  "name": "hotel-miranda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/input.scss dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidrami12/hotel-miranda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidrami12/hotel-miranda/issues"
+  },
+  "homepage": "https://github.com/Davidrami12/hotel-miranda#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.63.4"
+  }
+}
