@@ -98,4 +98,160 @@ body {
   color: black;
 }
 
+.tourSection {
+  padding: 14rem 1rem 7.5rem 2rem;
+  background-color: darkgrey;
+}
+.tourSection__container {
+  display: flex;
+  flex-direction: column;
+}
+.tourSection__container--subtitleDesktop {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+}
+.tourSection__container--subtitle {
+  width: 80%;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.28rem;
+  color: white;
+  padding-bottom: 4rem;
+}
+.tourSection__container--title {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: white;
+  padding-bottom: 4rem;
+}
+.tourSection__container__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.tourSection__container__buttons--tour {
+  border-style: none;
+  height: 6rem;
+  width: 22rem;
+  padding: 2.1rem 4.5rem;
+  background-color: goldenrod;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: white;
+  cursor: pointer;
+}
+.tourSection__container__buttons--learn {
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  height: 6rem;
+  width: 22rem;
+  padding: 2.1rem 4.5rem;
+  background-color: darkgray;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: white;
+  cursor: pointer;
+}
+
+.availabilitySection {
+  background-color: darkgray;
+  padding: 3rem 2rem;
+}
+.availabilitySection__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.availabilitySection__container__arrival {
+  gap: 1.5rem;
+}
+.availabilitySection__container__arrival--text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+}
+.availabilitySection__container__arrival--input {
+  flex-direction: row-reverse;
+  background-color: darkgray;
+  border-style: none;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid goldenrod;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #686868;
+}
+.availabilitySection__container__arrival--input::-webkit-calendar-picker-indicator {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(0.5) sepia(1);
+}
+.availabilitySection__container__departure {
+  gap: 1.5rem;
+}
+.availabilitySection__container__departure--text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+}
+.availabilitySection__container__departure--input {
+  flex-direction: row-reverse;
+  background-color: darkgray;
+  border-style: none;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid goldenrod;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #686868;
+}
+.availabilitySection__container__departure--input::-webkit-calendar-picker-indicator {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(0.5) sepia(1);
+}
+.availabilitySection__container__button {
+  border-style: none;
+  height: 6rem;
+  width: fit-content;
+  padding: 2.3rem 4.5rem;
+  background-color: goldenrod;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: white;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=styles.css.map */
