@@ -318,15 +318,6 @@ $light-red: #DE5777;
 
 // ABOUT SECTION STYLES
 .aboutSection {
-    @include mq.desktop {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        margin: 15rem 0 10rem 0;
-        // padding-left: 15%;
-        max-width: 70%;
-        margin: auto;
-    }
 
     &__info {
         background-color: #F9F9F9;
