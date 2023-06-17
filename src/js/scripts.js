@@ -16,24 +16,26 @@ const handleClick = () => {
 mobileMenuBurger.addEventListener("click", handleClick);
 
 // SWIPER
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+const swiper = new Swiper(".swiper", {
+  // Necessary parameters
+  effect: "default",
+  direction: "horizontal",
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 6000,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
