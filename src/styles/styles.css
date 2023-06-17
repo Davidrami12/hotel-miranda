@@ -412,4 +412,147 @@ body {
   color: #ffffff;
 }
 
+.roomSlider {
+  text-align: center;
+  margin-top: 6rem;
+  max-width: 100%;
+}
+.roomSlider__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.roomSlider__title {
+  padding-top: 2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.roomSlider__slides,
+.roomSlider .swiper {
+  position: relative;
+  max-width: 100%;
+  padding-top: 4.4rem;
+  height: fit-content;
+}
+.roomSlider__slides-button-prev, .roomSlider__slides-button-next,
+.roomSlider .swiper-button-prev,
+.roomSlider .swiper-button-next {
+  user-select: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 17rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  z-index: 99;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #111111;
+  font-weight: 700;
+  cursor: pointer;
+}
+.roomSlider__slides-button-prev:after, .roomSlider__slides-button-next:after,
+.roomSlider .swiper-button-prev:after,
+.roomSlider .swiper-button-next:after {
+  font-size: 1rem;
+}
+.roomSlider__slides-button-prev:hover, .roomSlider__slides-button-next:hover,
+.roomSlider .swiper-button-prev:hover,
+.roomSlider .swiper-button-next:hover {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+.roomSlider__slides-button-prev,
+.roomSlider .swiper-button-prev {
+  left: 1rem;
+  right: auto;
+}
+.roomSlider__slides-button-next,
+.roomSlider .swiper-button-next {
+  right: 1rem;
+  left: auto;
+}
+.roomSlider__slides-slide-next .roomSlider__slides--extras,
+.roomSlider__slides-slide-next .roomSlider__slides--title,
+.roomSlider__slides-slide-next .roomSlider__slides--description,
+.roomSlider__slides-slide-next .roomSlider__slides--price,
+.roomSlider__slides-slide-next .roomSlider__slides--price--perNight,
+.roomSlider .swiper-slide-next .roomSlider__slides--extras,
+.roomSlider .swiper-slide-next .roomSlider__slides--title,
+.roomSlider .swiper-slide-next .roomSlider__slides--description,
+.roomSlider .swiper-slide-next .roomSlider__slides--price,
+.roomSlider .swiper-slide-next .roomSlider__slides--price--perNight {
+  opacity: 1;
+}
+.roomSlider__slides--extras,
+.roomSlider .swiper--extras {
+  position: absolute;
+  width: 30rem;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -3.5rem;
+  z-index: 10;
+}
+.roomSlider__slides--roomImg,
+.roomSlider .swiper--roomImg {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.roomSlider__slides--title,
+.roomSlider .swiper--title {
+  position: relative;
+  width: 90%;
+  padding: 2rem 2rem 0 2rem;
+  margin: auto;
+  top: -2rem;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.roomSlider__slides--description,
+.roomSlider .swiper--description {
+  padding: 0 5rem 2rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+.roomSlider__slides--price,
+.roomSlider .swiper--price {
+  padding: 0 5rem 2rem 5rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #BEAD8E;
+}
+.roomSlider__slides--price--perNight,
+.roomSlider .swiper--price--perNight {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

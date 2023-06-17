@@ -1,3 +1,4 @@
+// BURGER MENU
 const mobileMenu = document.querySelector(".nav__menu");
 const mobileMenuBurger = document.getElementById("mobileMenuBurguer");
 
@@ -13,3 +14,5 @@ const handleClick = () => {
 };
 
 mobileMenuBurger.addEventListener("click", handleClick);
+
+// SWIPER
