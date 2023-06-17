@@ -5,8 +5,10 @@ const handleClick = () => {
   if (mobileMenu.classList.contains("nav__menu--closed")) {
     mobileMenu.classList.remove("nav__menu--closed");
     mobileMenu.classList.add("nav__menu");
+    mobileMenuBurger.src = "src/assets/icons/menu.svg";
   } else {
     mobileMenu.classList.add("nav__menu--closed");
+    mobileMenuBurger.src = "src/assets/icons/cross.svg";
   }
 };
 

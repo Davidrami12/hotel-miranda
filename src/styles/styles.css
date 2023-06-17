@@ -179,7 +179,7 @@ body {
 .availabilitySection__container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 .availabilitySection__container__arrival {
   gap: 1.5rem;
