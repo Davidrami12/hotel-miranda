@@ -36,6 +36,7 @@ body {
 .nav__container__menu--burger {
   height: 2.5rem;
   width: 2.5rem;
+  cursor: pointer;
 }
 .nav__container__menu--logo--favicon {
   position: relative;
