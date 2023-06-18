@@ -1,6 +1,6 @@
 // BURGER MENU
 const mobileMenu = document.querySelector(".nav__menu");
-const mobileMenuBurger = document.getElementById("mobileMenuBurguer");
+const mobileMenuBurger = document.querySelector("#mobileMenuBurguer");
 
 const handleClick = () => {
   if (mobileMenu.classList.contains("nav__menu--closed")) {
