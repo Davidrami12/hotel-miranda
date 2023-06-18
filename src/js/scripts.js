@@ -15,7 +15,7 @@ const handleClick = () => {
 
 mobileMenuBurger.addEventListener("click", handleClick);
 
-// SWIPER
+// Swiper for rooms sections (Home)
 const swiper = new Swiper(".swiper", {
   // Necessary parameters
   effect: "default",
@@ -37,5 +37,21 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
+  },
+});
+
+
+// Swiper for features section (Home)
+const swiperFeatures = new Swiper(".swiperFeatures", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "1",
+  spaceBetween: 30,
+  autoplay: {
+    delay: 6000,
+  },
+  pagination: {
+    el: ".swiperFeatures-pagination",
+    type: "bullets",
   },
 });
