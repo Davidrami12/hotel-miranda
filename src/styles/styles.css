@@ -612,4 +612,92 @@ body {
   cursor: pointer;
 }
 
+.featuresSection {
+  margin-top: 6rem;
+  max-width: 100%;
+}
+.featuresSection__subtitle {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.featuresSection__title {
+  text-align: center;
+  padding-top: 2.4rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.featuresSection__slides,
+.featuresSection .swiperFeatures {
+  position: relative;
+  width: 100%;
+  max-width: 50.5rem;
+  margin: auto;
+  padding-top: 3.2rem;
+  height: fit-content;
+  overflow: hidden;
+}
+.featuresSection__slides-pagination,
+.featuresSection .swiperFeatures-pagination {
+  display: flex;
+  justify-content: center;
+  height: 0.8rem;
+  margin-top: 3.2rem;
+  color: #BEAD8E;
+}
+.featuresSection__slides-pagination .swiper-pagination-bullet-active,
+.featuresSection .swiperFeatures-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
+.featuresSection__slides__container,
+.featuresSection .swiperFeatures__container {
+  position: relative;
+  height: fit-content;
+}
+.featuresSection__slides__container--icon,
+.featuresSection .swiperFeatures__container--icon {
+  margin: 8rem 0 0 3.8rem;
+}
+.featuresSection__slides__container--number,
+.featuresSection .swiperFeatures__container--number {
+  position: absolute;
+  top: 1rem;
+  right: 3.8rem;
+}
+.featuresSection__slides--title,
+.featuresSection .swiperFeatures--title {
+  text-align: left;
+  padding: 3.7rem 2rem 0 3.8rem;
+  margin: auto;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.featuresSection__slides--description,
+.featuresSection .swiperFeatures--description {
+  text-align: left;
+  padding: 2.8rem 5rem 0 3.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+
 /*# sourceMappingURL=styles.css.map */
