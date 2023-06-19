@@ -55,3 +55,32 @@ const swiperFeatures = new Swiper(".swiperFeatures", {
     type: "bullets",
   },
 });
+
+
+// Swiper for menu section (home)
+const swiperMenu = new Swiper(".swiperMenu", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "1",
+  spaceBetween: 30,
+  autoplay: {
+    delay: 6000,
+  },
+  navigation: {
+    nextEl: ".swiperMenu-button-next",
+    prevEl: ".swiperMenu-button-prev",
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
+
+
+
+// Swiper for secondary menu section (home)
+
+
+
