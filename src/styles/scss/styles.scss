@@ -1,5 +1,4 @@
 @import 'abstracts/variables';
-@import 'abstracts/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
@@ -12,8 +11,8 @@
 @import 'layout/home/roomSlider';
 @import 'layout/home/video';
 @import 'layout/home/features';
-@import 'layout/home/video';
-@import 'layout/home/video';
+@import 'layout/home/menu';
+
 
 
 html, * { 
