@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-html, * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-}
-
-body {
-  min-width: 320px;
-}
-
 .nav {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   height: 7rem;
@@ -698,6 +687,129 @@ body {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: #777777;
+}
+
+.videoSection {
+  background-color: #222222;
+  height: fit-content;
+}
+.videoSection__subtitle {
+  padding: 6.4rem 0 0 2.4rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #BEAD8E;
+}
+.videoSection__title {
+  padding: 3.2rem 2rem 0 2.4rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #ffffff;
+}
+.videoSection__description {
+  padding: 1.6rem 2rem 0 2.4rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #C2C2C2;
+}
+.videoSection__videoContainer {
+  padding-top: 3.2rem;
+  width: 90%;
+  height: 27rem;
+  margin: auto;
+}
+.videoSection__button {
+  margin: 3.6rem 2.2rem 4.8rem 2rem;
+  border-style: none;
+  height: 6rem;
+  width: fit-content;
+  padding: 2.3rem 5.6rem;
+  background-color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.videoSection {
+  background-color: #222222;
+  height: fit-content;
+}
+.videoSection__subtitle {
+  padding: 6.4rem 0 0 2.4rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #BEAD8E;
+}
+.videoSection__title {
+  padding: 3.2rem 2rem 0 2.4rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #ffffff;
+}
+.videoSection__description {
+  padding: 1.6rem 2rem 0 2.4rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #C2C2C2;
+}
+.videoSection__videoContainer {
+  padding-top: 3.2rem;
+  width: 90%;
+  height: 27rem;
+  margin: auto;
+}
+.videoSection__button {
+  margin: 3.6rem 2.2rem 4.8rem 2rem;
+  border-style: none;
+  height: 6rem;
+  width: fit-content;
+  padding: 2.3rem 5.6rem;
+  background-color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 320px;
 }
 
 /*# sourceMappingURL=styles.css.map */

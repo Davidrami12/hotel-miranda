@@ -1,0 +1,63 @@
+// VIDEO SECTION STYLES
+.videoSection {
+    background-color: $darker-grey;
+    height: fit-content;
+
+    &__subtitle {
+        padding: 6.4rem 0 0 2.4rem;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $gold;
+
+    }
+
+    &__title {
+        padding: 3.2rem 2rem 0 2.4rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: $white;
+
+    }
+
+    &__description {
+        padding: 1.6rem 2rem 0 2.4rem;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #C2C2C2;
+    }
+
+    &__videoContainer {
+        padding-top: 3.2rem;
+        width: 90%;
+        height: 27rem;
+        margin: auto;
+    }
+
+    &__button {
+        margin: 3.6rem 2.2rem 4.8rem 2rem;
+        border-style: none;
+        height: 6rem;
+        width: fit-content;
+        padding: 2.3rem 5.6rem;
+        background-color: $gold;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $white;
+        cursor: pointer;
+    }
+}
