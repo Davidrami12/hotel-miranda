@@ -1123,6 +1123,94 @@
   color: #BEAD8E;
 }
 
+.aboutVideoSection {
+  padding: 6rem 0;
+  max-width: 100%;
+}
+.aboutVideoSection__videoContainer {
+  padding-top: 3.2rem;
+  width: 90%;
+  height: 27rem;
+  margin: auto;
+}
+.aboutVideoSection__title {
+  padding: 3.6rem 2rem 5rem 2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: -0.116rem;
+  color: #222222;
+  text-align: center;
+}
+.aboutVideoSection__container {
+  padding: 0 2rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.aboutVideoSection__container__service {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutVideoSection__container__service:hover {
+  background-color: #BEAD8E;
+}
+.aboutVideoSection__container__service:hover .aboutVideoSection__container__service__title {
+  color: #ffffff;
+}
+.aboutVideoSection__container__service:hover .aboutVideoSection__container__service__icon {
+  filter: brightness(2);
+}
+.aboutVideoSection__container__service__icon {
+  filter: invert(0.45) sepia(1);
+}
+.aboutVideoSection__container__service--hide {
+  display: none;
+}
+.aboutVideoSection__container__service--hide:hover {
+  background-color: #BEAD8E;
+}
+.aboutVideoSection__container__service--hide:hover .aboutVideoSection__container__service--hide__title {
+  color: #ffffff;
+}
+.aboutVideoSection__container__service--hide:hover .aboutVideoSection__container__service--hide__icon {
+  filter: brightness(2);
+}
+.aboutVideoSection__container__service--hide__icon {
+  height: 5rem;
+  width: 5rem;
+  filter: invert(0.45) sepia(1);
+}
+.aboutVideoSection__container__service--hide__title {
+  padding-top: 1.2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.24rem;
+  color: #222222;
+}
+.aboutVideoSection__container__service__title {
+  padding-top: 1.2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.24rem;
+  color: #222222;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;

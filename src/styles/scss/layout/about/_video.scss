@@ -1,0 +1,103 @@
+// VIDEO SECTION STYLES
+.aboutVideoSection {
+    padding: 6rem 0;
+    max-width: 100%;
+
+    &__videoContainer {
+        padding-top: 3.2rem;
+        width: 90%;
+        height: 27rem;
+        margin: auto;
+    }
+
+    &__title {
+        padding: 3.6rem 2rem 5rem 2rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        letter-spacing: -0.116rem;
+        color: $darker-grey;
+        text-align: center;
+    }
+
+    &__container {
+        padding: 0 2rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        &__service {
+            width: 15rem;
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: $gold;
+            }
+
+            &:hover &__title {
+                color: $white;
+            }
+
+            &:hover &__icon {
+                filter: brightness(2);
+            }
+
+            &__icon {
+                filter: invert(0.45) sepia(1);
+            }
+
+            &--hide {
+                display: none;
+
+                &:hover {
+                    background-color: $gold;
+                }
+
+                &:hover &__title {
+                    color: $white;
+                }
+
+                &:hover &__icon {
+                    filter: brightness(2);
+                }
+
+                &__icon {
+                    height: 5rem;
+                    width: 5rem;
+                    filter: invert(0.45) sepia(1);
+                }
+
+                &__title {
+                    padding-top: 1.2rem;
+                    font-family: $archivo-font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    letter-spacing: 0.24rem;
+                    color: $darker-grey;
+                }
+            }
+
+            &__title {
+                padding-top: 1.2rem;
+                font-family: $archivo-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                letter-spacing: 0.24rem;
+                color: $darker-grey;
+            }
+        }
+    }
+}
