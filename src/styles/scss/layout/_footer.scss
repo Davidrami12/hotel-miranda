@@ -1,7 +1,8 @@
 .footer {
     margin-top: 6rem;
-    background-image: url('../../../assets/imgs/footer-background.jpg');
+    background-image: url('../../assets/imgs/footer-little.jpg');
     background-size: cover;
+    background-repeat: repeat, no-repeat;
 
     &__container1 {
         width: 100%;
