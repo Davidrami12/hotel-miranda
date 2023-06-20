@@ -254,6 +254,95 @@
   color: #111111;
 }
 
+.subheaderSection {
+  position: relative;
+  background-color: #333333;
+  max-width: 100%;
+}
+.subheaderSection__subtitle {
+  padding: 14rem 0 0 2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+}
+.subheaderSection__title {
+  padding: 1.6rem 0 9.6rem 2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #ffffff;
+}
+.subheaderSection__navigation {
+  padding: 1.6rem 1rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  min-width: 16rem;
+  width: fit-content;
+  background-color: #ffffff;
+}
+.subheaderSection__navigation__page {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  color: #222222;
+}
+.subheaderSection__navigation__page--active {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  border-left: 2px solid #222222;
+  color: #BEAD8E;
+}
+
+.btn {
+  border-style: none;
+  padding: 6rem;
+  width: fit-content;
+  padding: 2.3rem 5.6rem;
+  background-color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #736956;
+  transition: 0.5s;
+}
+.btn--large {
+  border-style: none;
+  padding: 2.3rem 4.5rem;
+}
+.btn--light {
+  width: 100%;
+  font-weight: 400;
+}
+
 .tourSection {
   padding: 14rem 1rem 7.5rem 2rem;
   background-color: #333333;
@@ -1064,65 +1153,6 @@
   color: #999999;
 }
 
-.subheaderSection {
-  position: relative;
-  background-color: #333333;
-  max-width: 100%;
-}
-.subheaderSection__subtitle {
-  padding: 14rem 0 0 2rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  letter-spacing: 0.28rem;
-  color: #ffffff;
-}
-.subheaderSection__title {
-  padding: 1.6rem 0 9.6rem 2rem;
-  font-family: "Old Standard TT", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 5.6rem;
-  line-height: 6rem;
-  letter-spacing: -0.12rem;
-  color: #ffffff;
-}
-.subheaderSection__navigation {
-  padding: 1.6rem 1rem;
-  position: absolute;
-  right: 2rem;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  height: 5rem;
-  min-width: 16rem;
-  width: fit-content;
-  background-color: #ffffff;
-}
-.subheaderSection__navigation__page {
-  padding: 0 1rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1.7rem;
-  letter-spacing: -0.048rem;
-  color: #222222;
-}
-.subheaderSection__navigation__page--active {
-  padding: 0 1rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1.7rem;
-  letter-spacing: -0.048rem;
-  border-left: 2px solid #222222;
-  color: #BEAD8E;
-}
-
 .aboutVideoSection {
   padding: 6rem 0;
   max-width: 100%;
@@ -1209,6 +1239,50 @@
   line-height: 1.4rem;
   letter-spacing: 0.24rem;
   color: #222222;
+}
+
+.restaurantSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+  padding: 2rem;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+}
+.restaurantSection__img {
+  width: 100%;
+  min-height: 20.3rem;
+}
+.restaurantSection__container__subtitle {
+  margin-top: 3.2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.restaurantSection__container__title {
+  margin-top: 2.6rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.9rem;
+  letter-spacing: -0.105rem;
+  color: #111111;
+}
+.restaurantSection__container__description {
+  margin-top: 2.6rem;
+  margin-bottom: 1.6rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
 }
 
 html, * {
