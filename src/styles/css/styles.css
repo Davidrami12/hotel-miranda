@@ -1064,6 +1064,65 @@
   color: #999999;
 }
 
+.subheaderSection {
+  position: relative;
+  background-color: #333333;
+  max-width: 100%;
+}
+.subheaderSection__subtitle {
+  padding: 14rem 0 0 2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+}
+.subheaderSection__title {
+  padding: 1.6rem 0 9.6rem 2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #ffffff;
+}
+.subheaderSection__navigation {
+  padding: 1.6rem 1rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  min-width: 16rem;
+  width: fit-content;
+  background-color: #ffffff;
+}
+.subheaderSection__navigation__page {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  color: #222222;
+}
+.subheaderSection__navigation__page--active {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  border-left: 2px solid #222222;
+  color: #BEAD8E;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
