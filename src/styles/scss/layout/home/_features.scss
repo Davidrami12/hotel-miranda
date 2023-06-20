@@ -43,6 +43,10 @@
             margin-top: 3.2rem;
             color: $gold;
 
+            & .swiper-pagination-bullet {
+                background: $lighter-grey;
+            }
+
             & .swiper-pagination-bullet-active {
                 background: $gold;
             }

@@ -898,6 +898,10 @@
   margin-top: 3.2rem;
   color: #BEAD8E;
 }
+.featuresSection__slides-pagination .swiper-pagination-bullet,
+.featuresSection .swiperFeatures-pagination .swiper-pagination-bullet {
+  background: #999999;
+}
 .featuresSection__slides-pagination .swiper-pagination-bullet-active,
 .featuresSection .swiperFeatures-pagination .swiper-pagination-bullet-active {
   background: #BEAD8E;
@@ -1278,6 +1282,90 @@
   margin-top: 2.6rem;
   margin-bottom: 1.6rem;
   font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+
+.dark {
+  padding-top: 4.8rem;
+  padding-bottom: 4.2rem;
+  background-color: #222222;
+}
+.dark__subtitle, .dark__title {
+  color: white;
+}
+.dark__swiper-slide {
+  padding-bottom: 5rem;
+  background-color: #292929;
+}
+.dark__slides--title {
+  background-color: #292929;
+  color: #ffffff;
+}
+.dark__slides--description {
+  color: #ffffff;
+}
+.dark__slides--number {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 13rem;
+  color: #222222;
+}
+.dark__container {
+  width: 80%;
+  margin: auto;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.dark__container__slides {
+  flex-basis: 25%;
+}
+.dark__container__slides__container {
+  position: relative;
+  height: fit-content;
+}
+.dark__container__slides__container--icon {
+  margin: 8rem 0 0 3.8rem;
+}
+.dark__container__slides__container--icon:hover {
+  animation: logoAnimate 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes logoAnimate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+.dark__container__slides--title {
+  text-align: left;
+  padding: 3.7rem 2rem 0 3.8rem;
+  margin: auto;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.dark__container__slides--description {
+  text-align: left;
+  padding: 2.8rem 5rem 0 3.8rem;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
