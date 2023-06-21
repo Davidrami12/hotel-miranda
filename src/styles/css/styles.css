@@ -1448,6 +1448,116 @@
   background: #BEAD8E;
 }
 
+.swiperRoomsList {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 4.4rem 2rem 0 2rem;
+}
+.swiperRoomsList-pagination .swiper-pagination-bullet {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  color: #222222;
+  opacity: 1;
+}
+.swiperRoomsList-pagination .swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+.swiperRoomsList .swiper-slide {
+  padding: 0 2rem;
+}
+.swiperRoomsList .roomSlider__slides {
+  position: relative;
+  max-width: 100%;
+  height: fit-content;
+}
+.swiperRoomsList .roomSlider__slides--extras {
+  position: absolute;
+  width: 30rem;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 22rem;
+  bottom: unset;
+  z-index: 10;
+}
+.swiperRoomsList .roomSlider__slides--roomImg {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.swiperRoomsList .roomSlider__slides--title {
+  position: relative;
+  width: 90%;
+  padding: 0;
+  margin: 4.9rem 2rem 0 2rem;
+  top: 0;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.swiperRoomsList .roomSlider__slides--description {
+  padding: 1.6rem 5rem 2rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+.swiperRoomsList .roomSlider__slides__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.swiperRoomsList .roomSlider__slides__container--price {
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BEAD8E;
+}
+.swiperRoomsList .roomSlider__slides__container--price--perNight {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+.swiperRoomsList .roomSlider__slides__container--bookNow {
+  text-decoration: none;
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BDBDBD;
+}
+.swiperRoomsList .roomSlider__slides__container--bookNow:hover {
+  cursor: pointer;
+  color: #111111;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
