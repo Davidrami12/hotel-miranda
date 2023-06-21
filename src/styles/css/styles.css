@@ -1373,6 +1373,80 @@
   color: #777777;
 }
 
+.counterSection {
+  padding: 6rem 2rem 0 2rem;
+}
+.counterSection__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.counterSection__title {
+  margin-top: 2.6rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.counterSection__container {
+  padding-top: 6.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.counterSection__container__subContainer {
+  justify-self: start;
+}
+.counterSection__container__subContainer__number {
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 6rem;
+  letter-spacing: -0.18rem;
+  color: #222222;
+}
+.counterSection__container__subContainer__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #777777;
+}
+.counterSection__container__arrow {
+  justify-self: end;
+}
+.counterSection .swiperMenuImages {
+  max-width: 100%;
+  height: fit-content;
+  padding-top: 5.2rem;
+  text-align: center;
+  overflow: hidden;
+}
+.counterSection .swiperMenuImages img {
+  width: 33.5rem;
+  height: 33.5rem;
+  object-fit: cover;
+}
+.counterSection .swiperMenuImages-pagination {
+  display: flex;
+  justify-content: center;
+  height: 0.8rem;
+  margin-top: 3.2rem;
+  color: #BEAD8E;
+}
+.counterSection .swiperMenuImages-pagination .swiper-pagination-bullet-active {
+  background: #BEAD8E;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;

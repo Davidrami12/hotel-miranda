@@ -1,0 +1,88 @@
+// COUNTER SECTION STYLES
+.counterSection {
+    padding: 6rem 2rem 0 2rem;
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey
+    }
+
+    &__title {
+        margin-top: 2.6rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5.6rem;
+        line-height: 6rem;
+        letter-spacing: -0.12rem;
+        color: $darker-grey;
+    }
+
+    &__container {
+        padding-top: 6.1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        //Meter inline blocks a todo esto!!
+ 
+
+        &__subContainer {
+            justify-self: start;
+
+            &__number {
+                font-family: $standard-tt-font;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 6rem;
+                line-height: 6rem;
+                letter-spacing: -0.18rem;
+                color: $darker-grey;
+            }
+
+            &__text {
+                font-family: $roboto-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: $light-grey;
+            }
+        }
+
+        &__arrow {
+            justify-self: end;
+        }
+    }
+
+    & .swiperMenuImages {
+        max-width: 100%;
+        height: fit-content;
+        padding-top: 5.2rem;
+        text-align: center;
+        overflow: hidden;
+
+        & img {
+            width: 33.5rem;
+            height: 33.5rem;
+            object-fit: cover;
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            height: 0.8rem;
+            margin-top: 3.2rem;
+            color: $gold;
+
+            & .swiper-pagination-bullet-active {
+                background: $gold;
+            }
+        }
+    }
+}
