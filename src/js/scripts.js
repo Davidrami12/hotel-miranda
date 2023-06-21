@@ -19,7 +19,7 @@ mobileMenuBurger.addEventListener("click", handleClick);
 // Slider for rooms sections (Home)
 const swiper = new Swiper(".swiper", {
   // Necessary parameters
-  effect: "default",
+  effect: "slide",
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
