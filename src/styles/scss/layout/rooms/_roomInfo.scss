@@ -1,0 +1,44 @@
+// SINGLE ROOM DETAILS SECTION STYLES
+.roomSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4.8rem 2rem;
+
+    &__subtitle {
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $light-grey;
+    }
+
+    &__title {
+        margin-top: 1.2rem;
+        font-family: $standard-tt-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        letter-spacing: -0.144rem;
+        color: $darker-grey;
+    }
+
+    &__price {
+        padding: 1.6rem 0;
+        font-family: $archivo-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 4.3rem;
+        color: $gold;
+
+        &--perNight {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}

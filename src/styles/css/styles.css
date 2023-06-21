@@ -1558,6 +1558,105 @@
   color: #111111;
 }
 
+.roomSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4.8rem 2rem;
+}
+.roomSection__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.roomSection__title {
+  margin-top: 1.2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.144rem;
+  color: #222222;
+}
+.roomSection__price {
+  padding: 1.6rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #BEAD8E;
+}
+.roomSection__price--perNight {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.singleRoomAvailabilitySection {
+  width: 90%;
+  margin: auto;
+}
+.singleRoomAvailabilitySection__subtitle {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.054rem;
+  color: #222222;
+}
+.singleRoomAvailabilitySection__form {
+  width: 90%;
+  margin: auto;
+  padding-top: 3.5rem;
+}
+.singleRoomAvailabilitySection__form__block {
+  display: flex;
+  flex-direction: column;
+}
+.singleRoomAvailabilitySection__form__block label {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #222222;
+}
+.singleRoomAvailabilitySection__form__block input {
+  margin: 1.3rem 0 1.9rem 0;
+  padding: 2.4rem 2.7rem 2.1rem 2.9rem;
+  border-style: none;
+  background-color: #F8F8F8;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #777777;
+}
+.singleRoomAvailabilitySection__form__block input::-webkit-calendar-picker-indicator {
+  height: 2rem;
+  width: 2rem;
+  filter: invert(46%) sepia(0%) saturate(667%) hue-rotate(141deg) brightness(102%) contrast(91%);
+}
+.singleRoomAvailabilitySection__text {
+  padding-top: 4.8rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.054rem;
+  color: #777777;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
