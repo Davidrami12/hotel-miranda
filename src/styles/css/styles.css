@@ -278,6 +278,7 @@
   line-height: 6rem;
   letter-spacing: -0.12rem;
   color: #ffffff;
+  max-width: 95%;
 }
 .subheaderSection__navigation {
   padding: 1.6rem 1rem;
