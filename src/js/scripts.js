@@ -16,7 +16,7 @@ const handleClick = () => {
 mobileMenuBurger.addEventListener("click", handleClick);
 
 
-// Swiper for rooms sections (Home)
+// Slider for rooms sections (Home)
 const swiper = new Swiper(".swiper", {
   // Necessary parameters
   effect: "default",
@@ -42,7 +42,7 @@ const swiper = new Swiper(".swiper", {
 });
 
 
-// Swiper for features section (Home)
+// Slider for features section (Home)
 const swiperFeatures = new Swiper(".swiperFeatures", {
   direction: "horizontal",
   loop: true,
@@ -58,7 +58,7 @@ const swiperFeatures = new Swiper(".swiperFeatures", {
 });
 
 
-// Swiper for menu section (home)
+// Slider for menu section (Home)
 const swiperMenu = new Swiper(".swiperMenu", {
   direction: "horizontal",
   loop: true,
@@ -80,7 +80,7 @@ const swiperMenu = new Swiper(".swiperMenu", {
 });
 
 
-// Swiper for secondary menu section (home)
+// Slider for secondary menu section (Home)
 const swiperMenuImages = new Swiper(".swiperMenuImages", {
   direction: "horizontal",
   loop: true,
@@ -96,3 +96,17 @@ const swiperMenuImages = new Swiper(".swiperMenuImages", {
 });
 
 
+// Slider for rooms list (rooms.html)
+const swiperRoomsList = new Swiper(".swiperRoomsList", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: "1",
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiperRoomsList-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
