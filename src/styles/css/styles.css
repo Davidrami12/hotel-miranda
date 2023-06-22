@@ -1703,6 +1703,66 @@
   color: #777777;
 }
 
+.employeeSection__container {
+  padding-top: 8rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.employeeSection__container__imgContainer {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+}
+.employeeSection__container__imgContainer__portrait {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.employeeSection__container__imgContainer__checkContainer {
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #BEAD8E;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  top: 0;
+  left: 75%;
+}
+.employeeSection__container__imgContainer__checkContainer__check {
+  padding-top: 1rem;
+}
+.employeeSection__container__name {
+  margin-top: 3.8rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: -0.09rem;
+  color: #222222;
+}
+.employeeSection__container__position {
+  margin-top: 1.5rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #BEAD8E;
+}
+.employeeSection__container__text {
+  margin-top: 2.5rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
