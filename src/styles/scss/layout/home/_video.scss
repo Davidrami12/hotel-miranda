@@ -38,10 +38,15 @@
     }
 
     &__videoContainer {
-        padding-top: 3.2rem;
+        padding-top: 2rem;
         width: 90%;
-        height: 27rem;
+        height: 30rem;
         margin: auto;
+
+        & video{
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__button {

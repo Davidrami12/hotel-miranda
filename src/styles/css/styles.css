@@ -940,10 +940,14 @@ body {
   color: #C2C2C2;
 }
 .videoSection__videoContainer {
-  padding-top: 3.2rem;
+  padding-top: 2rem;
   width: 90%;
-  height: 27rem;
+  height: 30rem;
   margin: auto;
+}
+.videoSection__videoContainer video {
+  width: 100%;
+  height: 100%;
 }
 .videoSection__button {
   margin: 3.6rem 2.2rem 4.8rem 2rem;
@@ -1173,14 +1177,18 @@ body {
 }
 
 .aboutVideoSection {
-  padding: 6rem 0;
+  padding: 0rem 0;
   max-width: 100%;
 }
 .aboutVideoSection__videoContainer {
-  padding-top: 3.2rem;
+  padding-top: 2rem;
   width: 90%;
-  height: 27rem;
+  height: 30rem;
   margin: auto;
+}
+.aboutVideoSection__videoContainer video {
+  width: 100%;
+  height: 100%;
 }
 .aboutVideoSection__title {
   padding: 3.6rem 2rem 5rem 2rem;
