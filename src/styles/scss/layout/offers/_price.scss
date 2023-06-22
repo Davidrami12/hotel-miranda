@@ -14,11 +14,10 @@
         &__priceContainer {
             position: absolute;
             padding-right: 1.5rem;
-            top: 2.5rem;
+            bottom: 68rem;
             right: 0;
             width: 14.5rem;
             text-align: right;
-            background-color: rgba(17, 17, 17, 0.5);
 
             &--gold {
                 font-family: $archivo-font;
@@ -73,59 +72,6 @@
         &__bigContainer {
             width: 90%;
             margin: auto;
-
-            &__priceContainerDesktop {
-                position: absolute;
-                padding-right: 1.5rem;
-                top: 10rem;
-                right: 0;
-                width: 14.5rem;
-                text-align: right;
-                background-color: rgba(17, 17, 17, 0.5);
-
-                &--gold {
-                    font-family: $archivo-font;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 2.3rem;
-                    line-height: 2.5rem;
-                    color: $gold;
-                    text-decoration: line-through;
-                    display: inline-block;
-
-                }
-
-                &--perNightGold {
-                    font-family: $archivo-font;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 1.3rem;
-                    line-height: 1.5rem;
-                    color: $gold;
-                    text-decoration: line-through;
-                    display: inline-block;
-                }
-
-                &--red {
-                    font-family: $archivo-font;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 3rem;
-                    line-height: 3.3rem;
-                    color: #DE5777;
-                    display: inline-block;
-                }
-
-                &--perNightRed {
-                    font-family: $archivo-font;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 2rem;
-                    line-height: 2.3rem;
-                    color: #DE5777;
-                    display: inline-block;
-                }
-            }
 
             &__subtitle {
                 padding-top: 1.6rem;
