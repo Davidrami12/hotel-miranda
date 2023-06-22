@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 320px;
+}
+
 .nav {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   height: 7rem;
@@ -87,6 +101,66 @@
   font-size: 1.6rem;
   line-height: 1.7rem;
   color: #111111;
+}
+
+.subheaderSection {
+  position: relative;
+  background-color: #333333;
+  max-width: 100%;
+}
+.subheaderSection__subtitle {
+  padding: 14rem 0 0 2rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.28rem;
+  color: #ffffff;
+}
+.subheaderSection__title {
+  padding: 1.6rem 0 9.6rem 2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: -0.12rem;
+  color: #ffffff;
+  max-width: 95%;
+}
+.subheaderSection__navigation {
+  padding: 1.6rem 1rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  min-width: 16rem;
+  width: fit-content;
+  background-color: #ffffff;
+}
+.subheaderSection__navigation__page {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  color: #222222;
+}
+.subheaderSection__navigation__page--active {
+  padding: 0 1rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.048rem;
+  border-left: 2px solid #222222;
+  color: #BEAD8E;
 }
 
 .footer {
@@ -252,66 +326,6 @@
   font-size: 1.6rem;
   line-height: 1.875rem;
   color: #111111;
-}
-
-.subheaderSection {
-  position: relative;
-  background-color: #333333;
-  max-width: 100%;
-}
-.subheaderSection__subtitle {
-  padding: 14rem 0 0 2rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  letter-spacing: 0.28rem;
-  color: #ffffff;
-}
-.subheaderSection__title {
-  padding: 1.6rem 0 9.6rem 2rem;
-  font-family: "Old Standard TT", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 5.6rem;
-  line-height: 6rem;
-  letter-spacing: -0.12rem;
-  color: #ffffff;
-  max-width: 95%;
-}
-.subheaderSection__navigation {
-  padding: 1.6rem 1rem;
-  position: absolute;
-  right: 2rem;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  height: 5rem;
-  min-width: 16rem;
-  width: fit-content;
-  background-color: #ffffff;
-}
-.subheaderSection__navigation__page {
-  padding: 0 1rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1.7rem;
-  letter-spacing: -0.048rem;
-  color: #222222;
-}
-.subheaderSection__navigation__page--active {
-  padding: 0 1rem;
-  font-family: "Archivo", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1.7rem;
-  letter-spacing: -0.048rem;
-  border-left: 2px solid #222222;
-  color: #BEAD8E;
 }
 
 .btn {
@@ -1992,18 +2006,172 @@
   color: #111111;
 }
 
-html, * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.offerRoomSection {
+  width: 100%;
+  padding-top: 4.8rem;
+  padding-bottom: 1rem;
 }
-
-html {
-  font-size: 62.5%;
+.offerRoomSection__room {
+  width: 90%;
+  margin: auto;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+  position: relative;
+  margin-bottom: 3.2rem;
 }
-
-body {
-  min-width: 320px;
+.offerRoomSection__room__priceContainer {
+  position: absolute;
+  padding-right: 1.5rem;
+  top: 2.5rem;
+  right: 0;
+  width: 14.5rem;
+  text-align: right;
+  background-color: rgba(17, 17, 17, 0.5);
+}
+.offerRoomSection__room__priceContainer--gold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__priceContainer--perNightGold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__priceContainer--red {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #DE5777;
+  display: inline-block;
+}
+.offerRoomSection__room__priceContainer--perNightRed {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #DE5777;
+  display: inline-block;
+}
+.offerRoomSection__room__img {
+  width: 100%;
+  min-height: 17rem;
+  height: fit-content;
+}
+.offerRoomSection__room__bigContainer {
+  width: 90%;
+  margin: auto;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop {
+  position: absolute;
+  padding-right: 1.5rem;
+  top: 10rem;
+  right: 0;
+  width: 14.5rem;
+  text-align: right;
+  background-color: rgba(17, 17, 17, 0.5);
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--gold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--perNightGold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--red {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #DE5777;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--perNightRed {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #DE5777;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__subtitle {
+  padding-top: 1.6rem;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.offerRoomSection__room__bigContainer__title {
+  margin-top: 1.2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.144rem;
+  color: #222222;
+}
+.offerRoomSection__room__bigContainer__separation {
+  width: 100%;
+  height: 1px;
+  background-color: #ECECEC;
+  display: none;
+}
+.offerRoomSection__room__bigContainer__smallContainer {
+  padding-top: 1.6rem;
+}
+.offerRoomSection__room__bigContainer__smallContainer__description {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+.offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer {
+  padding-top: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+}
+.offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer div {
+  width: 40%;
+}
+.offerRoomSection__room__bigContainer__smallContainer .btn {
+  margin-top: 2.5rem;
+  margin-bottom: 3.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
