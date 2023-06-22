@@ -1763,6 +1763,235 @@
   color: #777777;
 }
 
+.relatedRoomsSection {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.relatedRoomsSection > h1 {
+  text-align: left;
+}
+.relatedRoomsSection .roomSlider__slides,
+.relatedRoomsSection .swiper {
+  position: relative;
+  max-width: 100%;
+  height: fit-content;
+}
+.relatedRoomsSection .roomSlider__slides-button-prev, .relatedRoomsSection .roomSlider__slides-button-next,
+.relatedRoomsSection .swiper-button-prev,
+.relatedRoomsSection .swiper-button-next {
+  user-select: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 13rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  z-index: 99;
+  background-color: #ffffff;
+  font-size: 1rem;
+  color: #111111;
+  font-weight: 700;
+  cursor: pointer;
+}
+.relatedRoomsSection .roomSlider__slides-button-prev:after, .relatedRoomsSection .roomSlider__slides-button-next:after,
+.relatedRoomsSection .swiper-button-prev:after,
+.relatedRoomsSection .swiper-button-next:after {
+  font-size: 1rem;
+}
+.relatedRoomsSection .roomSlider__slides-button-prev:hover, .relatedRoomsSection .roomSlider__slides-button-next:hover,
+.relatedRoomsSection .swiper-button-prev:hover,
+.relatedRoomsSection .swiper-button-next:hover {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+.relatedRoomsSection .roomSlider__slides-button-prev,
+.relatedRoomsSection .swiper-button-prev {
+  left: 0rem;
+  right: auto;
+}
+.relatedRoomsSection .roomSlider__slides-button-next,
+.relatedRoomsSection .swiper-button-next {
+  right: 0rem;
+  left: auto;
+}
+.relatedRoomsSection .roomSlider__slides .swiper-slide,
+.relatedRoomsSection .swiper .swiper-slide {
+  padding: 0;
+}
+.relatedRoomsSection .roomSlider__slides--extras,
+.relatedRoomsSection .swiper--extras {
+  position: absolute;
+  width: 30rem;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 22.5rem;
+  bottom: auto;
+  z-index: 10;
+}
+.relatedRoomsSection .roomSlider__slides--roomImg,
+.relatedRoomsSection .swiper--roomImg {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.relatedRoomsSection .roomSlider__slides--title,
+.relatedRoomsSection .swiper--title {
+  position: relative;
+  width: 90%;
+  padding: 0;
+  margin: 4.9rem 2rem 0 2rem;
+  top: 0;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.relatedRoomsSection .roomSlider__slides--description,
+.relatedRoomsSection .swiper--description {
+  padding: 1.6rem 5rem 2rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+.relatedRoomsSection .roomSlider__slides__container,
+.relatedRoomsSection .swiper__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.relatedRoomsSection .roomSlider__slides__container--price,
+.relatedRoomsSection .swiper__container--price {
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BEAD8E;
+}
+.relatedRoomsSection .roomSlider__slides__container--price--perNight,
+.relatedRoomsSection .swiper__container--price--perNight {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+.relatedRoomsSection .roomSlider__slides__container--bookNow,
+.relatedRoomsSection .swiper__container--bookNow {
+  text-decoration: none;
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BDBDBD;
+}
+.relatedRoomsSection .roomSlider__slides__container--bookNow:hover,
+.relatedRoomsSection .swiper__container--bookNow:hover {
+  cursor: pointer;
+  color: #111111;
+}
+.relatedRoomsSection__desktopContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.relatedRoomsSection__swiper__slide {
+  position: relative;
+  max-width: 30rem;
+  height: fit-content;
+  text-align: center;
+}
+.relatedRoomsSection__swiper__slide__extras {
+  position: absolute;
+  width: 30rem;
+  height: 8rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: auto;
+  bottom: 20rem;
+  z-index: 10;
+}
+.relatedRoomsSection__swiper__slide__roomImg {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  max-width: 100%;
+}
+.relatedRoomsSection__swiper__slide__title {
+  position: relative;
+  width: 90%;
+  padding: 0;
+  margin: 4.9rem auto 0 auto;
+  top: 0;
+  background-color: #ffffff;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.12rem;
+  color: #222222;
+}
+.relatedRoomsSection__swiper__slide__description {
+  padding: 1.6rem 0 2rem 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #777777;
+}
+.relatedRoomsSection__swiper__slide__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.relatedRoomsSection__swiper__slide__container__price {
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BEAD8E;
+}
+.relatedRoomsSection__swiper__slide__container__price--perNight {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+.relatedRoomsSection__swiper__slide__container__bookNow {
+  padding: 0 0 2rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: #BDBDBD;
+}
+.relatedRoomsSection__swiper__slide__container__bookNow:hover {
+  cursor: pointer;
+  color: #111111;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
