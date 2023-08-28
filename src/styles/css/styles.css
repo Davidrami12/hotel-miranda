@@ -194,6 +194,11 @@ body {
   letter-spacing: 0.28rem;
   color: #ffffff;
 }
+@media all and (min-width: 1000px) {
+  .subheaderSection__subtitle {
+    padding: 14rem 0 0 15%;
+  }
+}
 .subheaderSection__title {
   padding: 1.6rem 0 9.6rem 2rem;
   font-family: "Old Standard TT", serif;
@@ -204,6 +209,11 @@ body {
   letter-spacing: -0.12rem;
   color: #ffffff;
   max-width: 95%;
+}
+@media all and (min-width: 1000px) {
+  .subheaderSection__title {
+    padding: 1.6rem 0 9.6rem 15%;
+  }
 }
 .subheaderSection__navigation {
   padding: 1.6rem 1rem;
@@ -216,6 +226,13 @@ body {
   min-width: 16rem;
   width: fit-content;
   background-color: #ffffff;
+}
+@media all and (min-width: 1000px) {
+  .subheaderSection__navigation {
+    right: 15%;
+    min-width: 16rem;
+    width: fit-content;
+  }
 }
 .subheaderSection__navigation__page {
   padding: 0 1rem;
@@ -245,13 +262,33 @@ body {
   background-size: cover;
   background-repeat: repeat, no-repeat;
 }
+@media all and (min-width: 641px) {
+  .footer {
+    background-image: url("resources/assets/images/bgImgBig.svg");
+  }
+}
 .footer__container1 {
   width: 100%;
   padding: 3.2rem 2.2rem 3.2rem 2.2rem;
 }
+@media all and (min-width: 1000px) {
+  .footer__container1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10rem 0;
+  }
+}
 .footer__container1__subcontainer1 {
   display: flex;
   flex-direction: column;
+}
+@media all and (min-width: 1000px) {
+  .footer__container1__subcontainer1 {
+    max-width: 25%;
+  }
 }
 .footer__container1__subcontainer1__header {
   display: flex;
@@ -386,6 +423,14 @@ body {
   padding: 0 5% 0 5%;
   background-color: #f8f8f8;
 }
+@media all and (min-width: 1000px) {
+  .footer__container2 {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+  }
+}
 .footer__container2__copyright {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -428,6 +473,13 @@ body {
 .btn--large {
   border-style: none;
   padding: 2.3rem 4.5rem;
+}
+@media all and (min-width: 1000px) {
+  .btn--large {
+    min-width: 25rem;
+    margin-left: 15rem;
+    padding: 2.3rem 2.4rem;
+  }
 }
 .btn--light {
   width: 100%;

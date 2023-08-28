@@ -1,3 +1,5 @@
+@use "../abstracts/mediaQueries" as mq;
+
 // ABOUT US SECTION STYLES
 .subheaderSection {
     position: relative;
@@ -13,6 +15,10 @@
         line-height: 1.8rem;
         letter-spacing: 0.28rem;
         color: $white;
+
+        @include mq.desktop {
+            padding: 14rem 0 0 15%;
+        }
     }
 
     &__title {
@@ -25,6 +31,10 @@
         letter-spacing: -0.12rem;
         color: $white;
         max-width: 95%;
+
+        @include mq.desktop {
+            padding: 1.6rem 0 9.6rem 15%;
+        }
     }
 
     &__navigation {
@@ -38,6 +48,12 @@
         min-width: 16rem;
         width: fit-content;
         background-color: $white;
+
+        @include mq.desktop {
+            right: 15%;
+            min-width: 16rem;
+            width: fit-content;
+        }
 
         &__page {
             padding: 0 1rem;
