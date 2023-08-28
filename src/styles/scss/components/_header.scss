@@ -1,3 +1,5 @@
+@use "../abstracts/mediaQueries" as mq;
+
 // Styles for the header section
 .nav {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -7,6 +9,12 @@
     position: fixed;
     width: 100%;
 
+    @include mq.desktop {
+        position: fixed;
+        width: 70%;
+        margin: 3rem 15% 0 15%;
+    }
+
     &__container {
         display: flex;
         height: 100%;
@@ -15,24 +23,46 @@
         justify-content: space-between;
         align-items: center;
 
+        @include mq.desktop {
+            width: 100%;
+            padding-left: 0.7rem;
+        }
+
         &__menu {
             display: flex;
             justify-content: flex-start;
             gap: 2rem;
 
+            @include mq.desktop {
+                flex: 1;
+            }
+
             &--burger {
                 height: 2.5rem;
                 width: 2.5rem;
                 cursor: pointer;
+
+                @include mq.desktop {
+                    display: none;
+                }
             }
 
             &--logo {
+
+                @include mq.desktop {
+                    align-items: center;
+                }
 
                 &--favicon {
                     position: relative;
                     height: 4rem;
                     width: 4rem;
                     box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+
+                    @include mq.desktop {
+                        height: 5rem;
+                        width: 5rem;
+                    }
 
                     & span {
                         text-decoration: none;
@@ -60,15 +90,33 @@
             justify-content: flex-start;
             gap: 2rem;
 
+            @include mq.desktop {
+                padding-right: 8rem;
+            }
+
             &--person {
                 height: 2rem;
                 width: 2rem;
+
+                @include mq.desktop {
+                    height: 4rem;
+                    width: 4rem;
+                    padding: 1rem;
+                    border: 2px solid rgba(133, 133, 133, 0.3);
+                }
 
             }
 
             &--search {
                 height: 2rem;
                 width: 2rem;
+
+                @include mq.desktop {
+                    height: 4rem;
+                    width: 4rem;
+                    padding: 1rem;
+                    border: 2px solid rgba(133, 133, 133, 0.3);
+                }
             }
         }
     }
@@ -89,6 +137,21 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
         z-index: 80;
 
+        @include mq.desktop {
+            position: relative;
+            display: flex;
+            top: 0;
+            height: 7rem;
+            padding: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            justify-content: space-evenly;
+            gap: 2.5rem;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: none;
+        }
+
         &--closed {
             display: flex;
         }
@@ -100,6 +163,10 @@
             font-size: 1.6rem;
             line-height: 1.7rem;
             color: $black;
+
+            @include mq.desktop {
+                width: fit-content;
+            }
         }
     }
 }
