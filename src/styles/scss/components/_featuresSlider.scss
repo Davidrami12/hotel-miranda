@@ -122,22 +122,6 @@
 
                 &--icon {
                     margin: 8rem 0 0 3.8rem;
-
-                    &:hover {
-                        animation: logoAnimate 1s;
-                        animation-timing-function: ease-in-out;
-                        animation-iteration-count: 1;
-                    }
-
-                    @keyframes logoAnimate {
-                        from {
-                            transform: rotate(0deg);
-                        }
-
-                        to {
-                            transform: rotate(720deg);
-                        }
-                    }
                 }
 
                 &--number {

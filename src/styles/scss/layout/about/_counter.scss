@@ -1,6 +1,13 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // COUNTER SECTION STYLES
 .counterSection {
     padding: 6rem 2rem 0 2rem;
+
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+    }
 
     &__subtitle {
         font-family: $archivo-font;
@@ -30,10 +37,19 @@
         justify-content: space-around;
 
         //Meter inline blocks a todo esto!!
- 
+        @include mq.desktop {
+            display: inline-block;
+            padding-right: 5%;
+        }
 
         &__subContainer {
             justify-self: start;
+
+            @include mq.desktop {
+                display: inline-block;
+                padding-left: 1.8rem;
+                padding-right: 3rem;
+            }
 
             &__number {
                 font-family: $standard-tt-font;
@@ -57,6 +73,10 @@
 
         &__arrow {
             justify-self: end;
+
+            @include mq.desktop {
+                padding-bottom: 2rem;
+            }
         }
     }
 
@@ -66,6 +86,10 @@
         padding-top: 5.2rem;
         text-align: center;
         overflow: hidden;
+
+        @include mq.desktop {
+            display: none;
+        }
 
         & img {
             width: 33.5rem;

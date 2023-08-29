@@ -1,13 +1,28 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // VIDEO SECTION STYLES
 .aboutVideoSection {
     padding: 0rem 0;
     max-width: 100%;
+
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
 
     &__videoContainer {
         padding-top: 2rem;
         width: 90%;
         height: 30rem;
         margin: auto;
+
+        @include mq.desktop {
+            padding-top: 6rem;
+            width: 75%;
+            height: 100%;
+        }
 
         & video{
             width: 100%;
@@ -21,10 +36,17 @@
         font-style: normal;
         font-weight: 400;
         font-size: 3.2rem;
-        line-height: 4rem;
         letter-spacing: -0.116rem;
         color: $darker-grey;
         text-align: center;
+
+        @include mq.desktop {
+            padding-top: 6rem;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: 6rem;
+        }
     }
 
     &__container {
@@ -43,6 +65,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            transition: all 0.5s;
 
             &:hover {
                 background-color: $gold;
@@ -62,6 +85,17 @@
 
             &--hide {
                 display: none;
+                transition: all 0.5s;
+
+                @include mq.desktop {
+                    display: inline-block;
+                    width: 15rem;
+                    height: 15rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
 
                 &:hover {
                     background-color: $gold;

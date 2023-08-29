@@ -172,6 +172,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.7rem;
   color: #111111;
+  transition: all 0.3s;
+}
+.nav__menu a:hover {
+  color: #BEAD8E;
 }
 @media all and (min-width: 1000px) {
   .nav__menu a {
@@ -608,19 +612,6 @@ body {
 }
 .featuresSection__container__slides__container--icon {
   margin: 8rem 0 0 3.8rem;
-}
-.featuresSection__container__slides__container--icon:hover {
-  animation: logoAnimate 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-@keyframes logoAnimate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(720deg);
-  }
 }
 .featuresSection__container__slides__container--number {
   position: absolute;
@@ -1713,11 +1704,26 @@ body {
   padding: 0rem 0;
   max-width: 100%;
 }
+@media all and (min-width: 1000px) {
+  .aboutVideoSection {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .aboutVideoSection__videoContainer {
   padding-top: 2rem;
   width: 90%;
   height: 30rem;
   margin: auto;
+}
+@media all and (min-width: 1000px) {
+  .aboutVideoSection__videoContainer {
+    padding-top: 6rem;
+    width: 75%;
+    height: 100%;
+  }
 }
 .aboutVideoSection__videoContainer video {
   width: 100%;
@@ -1729,10 +1735,18 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 3.2rem;
-  line-height: 4rem;
   letter-spacing: -0.116rem;
   color: #222222;
   text-align: center;
+}
+@media all and (min-width: 1000px) {
+  .aboutVideoSection__title {
+    padding-top: 6rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 6rem;
+  }
 }
 .aboutVideoSection__container {
   padding: 0 2rem;
@@ -1750,6 +1764,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
 }
 .aboutVideoSection__container__service:hover {
   background-color: #BEAD8E;
@@ -1765,6 +1780,18 @@ body {
 }
 .aboutVideoSection__container__service--hide {
   display: none;
+  transition: all 0.5s;
+}
+@media all and (min-width: 1000px) {
+  .aboutVideoSection__container__service--hide {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .aboutVideoSection__container__service--hide:hover {
   background-color: #BEAD8E;
@@ -1810,9 +1837,28 @@ body {
   padding: 2rem;
   box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
 }
+@media all and (min-width: 1000px) {
+  .restaurantSection {
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
 .restaurantSection__img {
   width: 100%;
   min-height: 20.3rem;
+}
+@media all and (min-width: 1000px) {
+  .restaurantSection__img {
+    width: 40%;
+    min-height: 35rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  .restaurantSection__container {
+    width: 50%;
+  }
 }
 .restaurantSection__container__subtitle {
   margin-top: 3.2rem;
@@ -1824,15 +1870,24 @@ body {
   letter-spacing: 0.28rem;
   color: #777777;
 }
+@media all and (min-width: 1000px) {
+  .restaurantSection__container__subtitle {
+    margin-top: 1rem;
+  }
+}
 .restaurantSection__container__title {
   margin-top: 2.6rem;
   font-family: "Old Standard TT", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 4rem;
-  line-height: 4.9rem;
   letter-spacing: -0.105rem;
   color: #111111;
+}
+@media all and (min-width: 1000px) {
+  .restaurantSection__container__title {
+    font-size: 6rem;
+  }
 }
 .restaurantSection__container__description {
   margin-top: 2.6rem;
@@ -1849,6 +1904,12 @@ body {
   padding-top: 4.8rem;
   padding-bottom: 4.2rem;
   background-color: #222222;
+}
+@media all and (min-width: 1000px) {
+  .dark {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 .dark__subtitle, .dark__title {
   color: white;
@@ -1872,6 +1933,12 @@ body {
   line-height: 13rem;
   color: #222222;
 }
+@media all and (min-width: 1000px) {
+  .dark__slides--number {
+    top: -2rem;
+    right: 0;
+  }
+}
 .dark__container {
   width: 80%;
   margin: auto;
@@ -1882,8 +1949,27 @@ body {
   flex-wrap: wrap;
   gap: 3rem;
 }
+@media all and (max-width: 999px) {
+  .dark__container {
+    display: none;
+  }
+}
+@media all and (min-width: 1000px) {
+  .dark__container {
+    justify-content: space-between;
+  }
+}
 .dark__container__slides {
   flex-basis: 25%;
+}
+@media all and (min-width: 1000px) {
+  .dark__container__slides {
+    background-color: #292929;
+    height: fit-content;
+    padding-bottom: 2rem;
+    width: 37rem;
+    flex-basis: 30%;
+  }
 }
 .dark__container__slides__container {
   position: relative;
@@ -1891,19 +1977,6 @@ body {
 }
 .dark__container__slides__container--icon {
   margin: 8rem 0 0 3.8rem;
-}
-.dark__container__slides__container--icon:hover {
-  animation: logoAnimate 1s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-}
-@keyframes logoAnimate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(720deg);
-  }
 }
 .dark__container__slides--title {
   text-align: left;
@@ -1932,6 +2005,12 @@ body {
 .counterSection {
   padding: 6rem 2rem 0 2rem;
 }
+@media all and (min-width: 1000px) {
+  .counterSection {
+    max-width: 80%;
+    margin: auto;
+  }
+}
 .counterSection__subtitle {
   font-family: "Archivo", sans-serif;
   font-style: normal;
@@ -1957,8 +2036,21 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+@media all and (min-width: 1000px) {
+  .counterSection__container {
+    display: inline-block;
+    padding-right: 5%;
+  }
+}
 .counterSection__container__subContainer {
   justify-self: start;
+}
+@media all and (min-width: 1000px) {
+  .counterSection__container__subContainer {
+    display: inline-block;
+    padding-left: 1.8rem;
+    padding-right: 3rem;
+  }
 }
 .counterSection__container__subContainer__number {
   font-family: "Old Standard TT", serif;
@@ -1980,12 +2072,22 @@ body {
 .counterSection__container__arrow {
   justify-self: end;
 }
+@media all and (min-width: 1000px) {
+  .counterSection__container__arrow {
+    padding-bottom: 2rem;
+  }
+}
 .counterSection .swiperMenuImages {
   max-width: 100%;
   height: fit-content;
   padding-top: 5.2rem;
   text-align: center;
   overflow: hidden;
+}
+@media all and (min-width: 1000px) {
+  .counterSection .swiperMenuImages {
+    display: none;
+  }
 }
 .counterSection .swiperMenuImages img {
   width: 33.5rem;

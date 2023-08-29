@@ -80,7 +80,6 @@
                 &--title {
                     height: 4rem;
                     width: 9rem;
-
                 }
             }
         }
@@ -163,6 +162,11 @@
             font-size: 1.6rem;
             line-height: 1.7rem;
             color: $black;
+            transition: all 0.3s;
+
+            &:hover{
+                color: $gold;
+            }
 
             @include mq.desktop {
                 width: fit-content;

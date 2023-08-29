@@ -1,8 +1,15 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // FEATURES SECTION STYLES
 .dark {
     padding-top: 4.8rem;
     padding-bottom: 4.2rem;
     background-color: $darker-grey;
+
+    @include mq.desktop {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
 
     &__subtitle,
     &__title {
@@ -31,6 +38,11 @@
             font-size: 12rem;
             line-height: 13rem;
             color: $darker-grey;
+
+            @include mq.desktop {
+                top: -2rem;
+                right: 0;
+            }
         }
     }
 
@@ -44,8 +56,24 @@
         flex-wrap: wrap;
         gap: 3rem;
 
+        @include mq.nondesktop {
+            display: none;
+        }
+
+        @include mq.desktop {
+            justify-content: space-between;
+        }
+
         &__slides {
             flex-basis: 25%;
+
+            @include mq.desktop {
+                background-color: #292929;
+                height: fit-content;
+                padding-bottom: 2rem;
+                width: 37rem;
+                flex-basis: 30%;
+            }
 
             &__container {
                 position: relative;
@@ -53,22 +81,6 @@
 
                 &--icon {
                     margin: 8rem 0 0 3.8rem;
-
-                    &:hover {
-                        animation: logoAnimate 1s;
-                        animation-timing-function: ease-in-out;
-                        animation-iteration-count: 1;
-                    }
-
-                    @keyframes logoAnimate {
-                        from {
-                            transform: rotate(0deg);
-                        }
-
-                        to {
-                            transform: rotate(720deg);
-                        }
-                    }
                 }
             }
 
