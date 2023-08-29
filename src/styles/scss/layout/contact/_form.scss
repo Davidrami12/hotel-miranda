@@ -1,3 +1,5 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // CONTACT FORM SECTION STYLES
 .contactFormSection {
     width: 90%;
@@ -9,11 +11,25 @@
     flex-wrap: wrap;
     gap: 1.6rem;
 
+    & div:nth-child(3) {
+        @include mq.desktop {
+            width: 91.5%;
+        }
+    }
+
+    @include mq.desktop {
+        width: 80%;
+    }
+
     &__firstContainer {
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
         width: 100%;
+
+        @include mq.desktop {
+            width: 45%;
+        }
 
         &__input {
             position: relative;
@@ -45,5 +61,9 @@
     & button {
         width: 80%;
         margin-top: 2rem;
+
+        @include mq.desktop {
+            width: 20%;
+        }
     }
 }

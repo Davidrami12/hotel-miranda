@@ -79,6 +79,7 @@
                     height: 4rem;
                     width: 4rem;
                     background-color: $lightest-grey;
+                    transition: all 0.5s;
 
                     &:hover {
                         background-color: $gold;
