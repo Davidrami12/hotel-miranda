@@ -1,7 +1,14 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // STATS SECTION STYLES
 .statsSection {
     background-color: $darker-grey;
     margin-top: 6rem;
+
+    @include mq.desktop {
+        width: 70%;
+        margin: 12rem auto 0 auto;
+    }
 
     &__container {
         display: flex;
@@ -9,6 +16,12 @@
         align-items: center;
         gap: 6rem;
         padding: 4.8rem 0;
+
+        @include mq.desktop {
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 0;
+        }
 
         &__stat {
             display: flex;

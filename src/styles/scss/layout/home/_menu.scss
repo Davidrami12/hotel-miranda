@@ -1,3 +1,5 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // MENU SECTION STYLES
 .menuSection {
     position: relative;
@@ -5,12 +7,32 @@
     overflow: hidden;
     padding: 18rem 2rem 0 2rem;
 
+    @include mq.desktop {
+        width: 70%;
+        margin: auto;
+        overflow: visible;
+        scale: (1);
+    }
+
+    .wrapper {
+        @include mq.desktop {
+            overflow: hidden;
+        }
+    }
+
     &__icon {
         position: absolute;
         width: 11.4rem;
         height: 11.4rem;
         top: 7rem;
         right: -2.5rem;
+
+        @include mq.desktop {
+            position: fixed;
+            right: auto;
+            left: -14.5rem;
+            top: 9rem;
+        }
     }
 
     &__subtitle {
@@ -59,6 +81,11 @@
             font-weight: 300;
             cursor: pointer;
 
+            @include mq.desktop {
+                bottom: auto;
+                top: -5rem;
+            }
+
             &:after {
                 font-size: 1rem;
             }
@@ -85,6 +112,28 @@
             // height: 12rem;
             margin-bottom: 1.6rem;
 
+            &:hover {
+                @include mq.desktop {
+                    background-color: $darker-grey;
+
+                    .menuSection__slides__part1__container2--title,
+                    .menuSection__slides__part1__container2--description,
+                    .menuSection__slides__part2__container2--title,
+                    .menuSection__slides__part2__container2--description,
+                    .menuSection__slides__part3__container2--title,
+                    .menuSection__slides__part3__container2--description {
+                        color: $white;
+                    }
+
+                    .menuSection__slides__part1--arrow,
+                    .menuSection__slides__part2--arrow,
+                    .menuSection__slides__part3--arrow {
+                        display: block;
+                    }
+                }
+
+            }
+
             &__container {
                 &--icon {
                     width: 12rem;
@@ -98,6 +147,11 @@
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 3rem;
+
+                @include mq.desktop {
+                    flex-grow: 2;
+                    padding: 1rem 0 1rem 3rem;
+                }
 
                 &--title {
                     padding-bottom: 1.2rem;
@@ -137,6 +191,10 @@
         padding-top: 12rem;
         text-align: center;
 
+        @include mq.desktop {
+            display: none;
+        }
+
         & img {
             width: 33.5rem;
             height: 33.5rem;
@@ -158,6 +216,10 @@
 
     &__imagesDesktop {
         padding-top: 12rem;
+
+        @include mq.nondesktop {
+            display: none;
+        }
 
         display: flex;
         flex-direction: row;

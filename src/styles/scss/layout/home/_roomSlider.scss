@@ -1,3 +1,5 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // ROOM SLIDER SECTION STYLES
 .roomSlider {
     text-align: center;
@@ -89,6 +91,10 @@
             margin: 0 auto;
             top: -3.5rem;
             z-index: 10;
+
+            @include mq.desktop {
+                opacity: 0;
+            }
         }
 
         &--roomImg {
@@ -112,6 +118,10 @@
             line-height: 3.6rem;
             letter-spacing: -0.12rem;
             color: #222222;
+
+            @include mq.desktop {
+                opacity: 0;
+            }
         }
 
         &--description {
@@ -122,6 +132,10 @@
             font-size: 1.4rem;
             line-height: 2.4rem;
             color: $light-grey;
+
+            @include mq.desktop {
+                opacity: 0;
+            }
         }
 
         &--price {
@@ -133,10 +147,18 @@
             line-height: 4.3rem;
             color: $gold;
 
+            @include mq.desktop {
+                opacity: 0;
+            }
+
             &--perNight {
                 font-weight: 400;
                 font-size: 1.5rem;
                 line-height: 2rem;
+
+                @include mq.desktop {
+                    opacity: 0;
+                }
             }
         }
     }

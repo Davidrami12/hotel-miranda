@@ -1,8 +1,32 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // ABOUT SECTION STYLES
 .aboutSection {
 
+    @include mq.desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin: 15rem 0 10rem 0;
+        // padding-left: 15%;
+        max-width: 70%;
+        margin: auto;
+    }
+
     &__info {
         background-color: #F9F9F9;
+
+        @include mq.desktop {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding-left: 7rem;
+            padding-right: 5rem;
+            margin-top: 15rem;
+            z-index: -5;
+            // word-break: break-all;
+            // width: 50%;
+        }
 
         &--subtitle {
             margin-top: 6rem;
@@ -57,16 +81,36 @@
 
     &__cards {
 
+        @include mq.desktop {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            padding-left: 5%;
+        }
+
         &__team {
             position: relative;
             top: -12rem;
             width: 70%;
             margin: auto;
 
+            @include mq.desktop {
+                top: 0;
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                margin-right: 3rem;
+                margin-top: 0;
+            }
+
             &--img {
                 width: 100%;
                 height: 30rem;
                 object-fit: cover;
+
+                @include mq.desktop {
+                    width: 27rem;
+                }
             }
 
             &--container {
@@ -78,6 +122,10 @@
                 height: 30rem;
                 box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
                 text-align: center;
+
+                @include mq.desktop {
+                    margin-bottom: 3rem;
+                }
 
                 &--icons {
                     height: fit-content;
@@ -128,10 +176,21 @@
             margin: auto;
             top: -2rem;
 
+            @include mq.desktop {
+                display: flex;
+                flex-direction: column;
+                top: 3rem;
+                margin-top: 0;
+            }
+
             &--img {
                 width: 100%;
                 height: 30rem;
                 object-fit: cover;
+
+                @include mq.desktop {
+                    width: 27rem;
+                }
             }
 
             &--container {
@@ -143,6 +202,10 @@
                 height: 30rem;
                 background-color: $darker-grey;
                 text-align: center;
+
+                @include mq.desktop {
+                    margin-top: 3rem;
+                }
 
                 &--icons {
                     height: fit-content;
