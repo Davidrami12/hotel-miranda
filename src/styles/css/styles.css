@@ -2654,6 +2654,12 @@ body {
   padding-top: 4.8rem;
   padding-bottom: 1rem;
 }
+@media all and (min-width: 1000px) {
+  .offerRoomSection {
+    width: 80%;
+    margin: auto;
+  }
+}
 .offerRoomSection__room {
   width: 90%;
   margin: auto;
@@ -2668,6 +2674,12 @@ body {
   right: 0;
   width: 14.5rem;
   text-align: right;
+  text-shadow: 2px 1px 1px black;
+}
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__priceContainer {
+    display: none;
+  }
 }
 .offerRoomSection__room__priceContainer--gold {
   font-family: "Archivo", sans-serif;
@@ -2712,9 +2724,84 @@ body {
   min-height: 17rem;
   height: fit-content;
 }
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__img {
+    z-index: -1;
+    height: fit-content;
+  }
+}
 .offerRoomSection__room__bigContainer {
   width: 90%;
   margin: auto;
+}
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__bigContainer {
+    position: relative;
+    top: -4rem;
+    background-color: #ffffff;
+    border-top: 6px solid #BEAD8E;
+    padding: 3rem;
+  }
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop {
+  position: absolute;
+  padding-right: 1.5rem;
+  top: 10rem;
+  right: 0;
+  width: 14.5rem;
+  text-align: right;
+  background-color: rgba(17, 17, 17, 0.5);
+}
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__bigContainer__priceContainerDesktop {
+    display: block;
+    top: 5rem;
+    right: 2.5rem;
+    background-color: #ffffff;
+  }
+}
+@media all and (max-width: 999px) {
+  .offerRoomSection__room__bigContainer__priceContainerDesktop {
+    display: none;
+  }
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--gold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--perNightGold {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #BEAD8E;
+  text-decoration: line-through;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--red {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.3rem;
+  color: #DE5777;
+  display: inline-block;
+}
+.offerRoomSection__room__bigContainer__priceContainerDesktop--perNightRed {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #DE5777;
+  display: inline-block;
 }
 .offerRoomSection__room__bigContainer__subtitle {
   padding-top: 1.6rem;
@@ -2738,9 +2825,14 @@ body {
 }
 .offerRoomSection__room__bigContainer__separation {
   width: 100%;
-  height: 1px;
+  height: 3px;
   background-color: #ECECEC;
   display: none;
+}
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__bigContainer__separation {
+    display: block;
+  }
 }
 .offerRoomSection__room__bigContainer__smallContainer {
   padding-top: 1.6rem;
@@ -2753,6 +2845,12 @@ body {
   line-height: 2.4rem;
   color: #777777;
 }
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__bigContainer__smallContainer__description {
+    display: inline-block;
+    width: 40%;
+  }
+}
 .offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer {
   padding-top: 2.4rem;
   display: flex;
@@ -2760,6 +2858,14 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.7rem;
+}
+@media all and (min-width: 1000px) {
+  .offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer {
+    display: inline-flex;
+    width: 50%;
+    margin-left: 5%;
+    vertical-align: top;
+  }
 }
 .offerRoomSection__room__bigContainer__smallContainer__amenitiesContainer div {
   width: 40%;
@@ -2803,6 +2909,13 @@ body {
   height: fit-content;
   margin: 4.8rem auto;
   background-color: #ffffff;
+}
+@media all and (min-width: 1000px) {
+  .popularRoomsSection .roomSlider__slides,
+  .popularRoomsSection .swiper {
+    display: none;
+    background-color: red;
+  }
 }
 .popularRoomsSection .roomSlider__slides-button-prev, .popularRoomsSection .roomSlider__slides-button-next,
 .popularRoomsSection .swiper-button-prev,
@@ -2858,12 +2971,25 @@ body {
   top: 22.5rem;
   z-index: 10;
 }
+@media all and (min-width: 1000px) {
+  .popularRoomsSection .roomSlider__slides--extras,
+  .popularRoomsSection .swiper--extras {
+    opacity: 1;
+  }
+}
 .popularRoomsSection .roomSlider__slides--roomImg,
 .popularRoomsSection .swiper--roomImg {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   max-width: 100%;
+}
+@media all and (min-width: 1000px) {
+  .popularRoomsSection .roomSlider__slides--roomImg,
+  .popularRoomsSection .swiper--roomImg {
+    max-width: 30%;
+    display: inline-block;
+  }
 }
 .popularRoomsSection .roomSlider__slides--title,
 .popularRoomsSection .swiper--title {
@@ -2881,6 +3007,14 @@ body {
   letter-spacing: -0.12rem;
   color: #222222;
 }
+@media all and (min-width: 1000px) {
+  .popularRoomsSection .roomSlider__slides--title,
+  .popularRoomsSection .swiper--title {
+    opacity: 1;
+    display: inline-block;
+    width: 25%;
+  }
+}
 .popularRoomsSection .roomSlider__slides--description,
 .popularRoomsSection .swiper--description {
   padding: 1.6rem 5rem 2rem 5rem;
@@ -2890,6 +3024,14 @@ body {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: #777777;
+}
+@media all and (min-width: 1000px) {
+  .popularRoomsSection .roomSlider__slides--description,
+  .popularRoomsSection .swiper--description {
+    opacity: 1;
+    display: inline-block;
+    width: 25%;
+  }
 }
 .popularRoomsSection .roomSlider__slides__container,
 .popularRoomsSection .swiper__container {
@@ -2944,6 +3086,11 @@ body {
   height: fit-content;
   text-align: center;
   background-color: #ffffff;
+}
+@media all and (max-width: 999px) {
+  .popularRoomsSection__swiper__slide {
+    display: none;
+  }
 }
 .popularRoomsSection__swiper__slide__extras {
   position: absolute;
