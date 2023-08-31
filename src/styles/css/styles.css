@@ -1345,8 +1345,8 @@ body {
   .videoSection__videoContainer {
     position: absolute;
     padding: 0;
-    width: 57rem;
-    height: 46rem;
+    width: 60rem;
+    height: 40rem;
     top: 0;
     bottom: 0;
     right: 10%;
@@ -1494,6 +1494,7 @@ body {
   .menuSection .swiperMenu__part1:hover,
   .menuSection .swiperMenu__part2:hover,
   .menuSection .swiperMenu__part3:hover {
+    transition: all 0.3s;
     background-color: #222222;
   }
   .menuSection__slides__part1:hover .menuSection__slides__part1__container2--title,

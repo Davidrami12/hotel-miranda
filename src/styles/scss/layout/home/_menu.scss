@@ -114,6 +114,7 @@
 
             &:hover {
                 @include mq.desktop {
+                    transition: all 0.3s;
                     background-color: $darker-grey;
 
                     .menuSection__slides__part1__container2--title,
