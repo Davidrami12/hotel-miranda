@@ -276,7 +276,7 @@ body {
 }
 @media all and (min-width: 641px) {
   .footer {
-    background-image: url("resources/assets/images/bgImgBig.svg");
+    background-image: url("../../assets/imgs/footer-big.jpg");
   }
 }
 .footer__container1 {
