@@ -2117,6 +2117,18 @@ body {
   overflow: hidden;
   padding: 4.4rem 2rem 0 2rem;
 }
+@media all and (min-width: 1000px) {
+  .swiperRoomsList {
+    max-width: 80%;
+    margin: auto;
+    text-align: unset;
+  }
+}
+@media all and (min-width: 1000px) {
+  .swiperRoomsList-pagination {
+    text-align: center;
+  }
+}
 .swiperRoomsList-pagination .swiper-pagination-bullet {
   height: 4rem;
   width: 4rem;
@@ -2139,6 +2151,20 @@ body {
 .swiperRoomsList .swiper-slide {
   padding: 0 2rem;
 }
+@media all and (min-width: 1000px) {
+  .swiperRoomsList .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  .swiperRoomsList .swiper-slide > div {
+    width: 30%;
+  }
+}
 .swiperRoomsList .roomSlider__slides {
   position: relative;
   max-width: 100%;
@@ -2154,6 +2180,15 @@ body {
   top: 22rem;
   bottom: unset;
   z-index: 10;
+}
+@media all and (min-width: 1000px) {
+  .swiperRoomsList .roomSlider__slides--extras {
+    opacity: 1;
+    bottom: unset;
+    top: 22rem;
+    max-width: 30rem;
+    width: 100%;
+  }
 }
 .swiperRoomsList .roomSlider__slides--roomImg {
   width: 100%;
@@ -2176,6 +2211,12 @@ body {
   letter-spacing: -0.12rem;
   color: #222222;
 }
+@media all and (min-width: 1000px) {
+  .swiperRoomsList .roomSlider__slides--title {
+    opacity: 1;
+    text-align: center;
+  }
+}
 .swiperRoomsList .roomSlider__slides--description {
   padding: 1.6rem 5rem 2rem 5rem;
   font-family: "Roboto", sans-serif;
@@ -2184,6 +2225,12 @@ body {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: #777777;
+}
+@media all and (min-width: 1000px) {
+  .swiperRoomsList .roomSlider__slides--description {
+    opacity: 1;
+    text-align: center;
+  }
 }
 .swiperRoomsList .roomSlider__slides__container {
   display: flex;

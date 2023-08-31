@@ -1,3 +1,5 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // ROOMS LIST SLIDER SECTION STYLES
 .swiperRoomsList {
     text-align: center;
@@ -5,7 +7,16 @@
     overflow: hidden;
     padding: 4.4rem 2rem 0 2rem;
 
+    @include mq.desktop {
+        max-width: 80%;
+        margin: auto;
+        text-align: unset;
+    }
+
     &-pagination {
+        @include mq.desktop {
+            text-align: center;
+        }
 
         .swiper-pagination-bullet {
             height: 4rem;
@@ -31,6 +42,20 @@
 
     .swiper-slide {
         padding: 0 2rem;
+
+        @include mq.desktop {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        &>div {
+            @include mq.desktop {
+                width: 30%;
+            }
+        }
     }
 
     .roomSlider__slides {
@@ -48,6 +73,14 @@
             top: 22rem;
             bottom: unset;
             z-index: 10;
+
+            @include mq.desktop {
+                opacity: 1;
+                bottom: unset;
+                top: 22rem;
+                max-width: 30rem;
+                width: 100%;
+            }
         }
 
         &--roomImg {
@@ -71,6 +104,11 @@
             line-height: 3.6rem;
             letter-spacing: -0.12rem;
             color: #222222;
+
+            @include mq.desktop {
+                opacity: 1;
+                text-align: center;
+            }
         }
 
         &--description {
@@ -81,6 +119,11 @@
             font-size: 1.4rem;
             line-height: 2.4rem;
             color: $light-grey;
+
+            @include mq.desktop {
+                opacity: 1;
+                text-align: center;
+            }
         }
 
         &__container {
