@@ -15,6 +15,20 @@ const handleClick = () => {
 
 mobileMenuBurger.addEventListener("click", handleClick);
 
+const hideNavBar = () => {
+  let desktop= window.matchMedia('(min-width: 1000px)')
+
+    if(desktop){
+        if(window.scrollY>200){
+            document.getElementsByClassName("nav")[0].classList.add("transition-top")
+        }else{
+            document.getElementsByClassName("nav")[0].classList.remove("transition-top")
+        }
+    }
+}
+
+window.addEventListener('scroll', hideNavBar);
+
 
 // Slider for rooms sections (Home)
 const swiper = new Swiper(".swiper", {
