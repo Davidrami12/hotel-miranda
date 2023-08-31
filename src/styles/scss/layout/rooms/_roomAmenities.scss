@@ -1,8 +1,17 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // SINGLE ROOM AMENITIES SECTION STYLES
 .amenitiesSection {
     width: 90%;
     margin: auto;
     padding-top: 6rem;
+
+    @include mq.desktop {
+        width: 80%;
+        margin: auto;
+        padding-top: 10rem;
+        padding-right: 20%;
+    }
 
     &__separation {
         width: 100%;
@@ -28,11 +37,19 @@
         flex-wrap: wrap;
         gap: 1.7rem;
 
+        @include mq.desktop {
+            justify-content: flex-start;
+        }
+
         &__subcontainer {
             display: flex;
             flex-direction: row;
             gap: 0.8rem;
             width: 46%;
+
+            @include mq.desktop {
+                width: 25%;
+            }
 
             &__img {
                 width: 1.8rem;

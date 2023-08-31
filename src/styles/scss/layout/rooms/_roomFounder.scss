@@ -1,3 +1,5 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // SINGLE ROOM EMPLOYEE SECTION STYLES
 .employeeSection {
     &__container {
@@ -6,10 +8,27 @@
         width: 80%;
         margin: auto;
 
+        @include mq.desktop {
+            width: 25%;
+            margin-left: 10%;
+            margin-top: 9rem;
+            padding: 6rem 2.5rem 4rem 2.5rem;
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+        }
+
         &__imgContainer {
             position: relative;
             width: 150px;
             margin: 0 auto;
+
+            @include mq.tablet {
+                width: 30%;
+                margin: auto;
+            }
+
+            @include mq.desktop {
+                width: 100%;
+            }
 
             &__portrait {
                 width: 15rem;

@@ -1,7 +1,17 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // SINGLE ROOM AVAILABILITY SECTION STYLES
 .singleRoomAvailabilitySection {
     width: 90%;
     margin: auto;
+
+    @include mq.desktop {
+        width: 30%;
+        display: inline-block;
+        margin-right: 10%;
+        vertical-align: top;
+        margin-top: 15rem;
+    }
 
     &__subtitle {
         text-align: center;
@@ -62,5 +72,9 @@
         line-height: 2.4rem;
         letter-spacing: 0.054rem;
         color: $light-grey;
+
+        @include mq.desktop {
+            display: none;
+        }
     }
 }

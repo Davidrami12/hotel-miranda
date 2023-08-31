@@ -1,8 +1,18 @@
+@use "../../abstracts/mediaQueries" as mq;
+
 // SINGLE ROOM RELATED ROOMS SECTION STYLES
 .relatedRoomsSection {
     text-align: center;
     max-width: 100%;
     overflow: hidden;
+
+    @include mq.desktop {
+        max-width: 90%;
+        margin: auto;
+        text-align: unset;
+        display: block;
+        transform: none;
+    }
 
     &>h1 {
         text-align: left;
@@ -13,6 +23,10 @@
         position: relative;
         max-width: 100%;
         height: fit-content;
+
+        @include mq.desktop {
+            display: none;
+        }
 
         &-button-prev,
         &-button-next {
@@ -65,6 +79,10 @@
             top: 22.5rem;
             bottom: auto;
             z-index: 10;
+
+            @include mq.desktop {
+                opacity: 1;
+            }
         }
 
         &--roomImg {
@@ -72,6 +90,11 @@
             height: 25rem;
             object-fit: cover;
             max-width: 100%;
+
+            @include mq.desktop {
+                max-width: 30%;
+                display: inline-block;
+            }
         }
 
         &--title {
@@ -88,6 +111,12 @@
             line-height: 3.6rem;
             letter-spacing: -0.12rem;
             color: #222222;
+
+            @include mq.desktop {
+                opacity: 1;
+                display: inline-block;
+                width: 25%;
+            }
         }
 
         &--description {
@@ -98,6 +127,12 @@
             font-size: 1.4rem;
             line-height: 2.4rem;
             color: $light-grey;
+
+            @include mq.desktop {
+                opacity: 1;
+                display: inline-block;
+                width: 25%;
+            }
         }
 
         &__container {
@@ -153,6 +188,10 @@
         max-width: 30rem;
         height: fit-content;
         text-align: center;
+
+        @include mq.nondesktop {
+            display: none;
+        }
 
         &__extras {
             position: absolute;

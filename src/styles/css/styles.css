@@ -2274,6 +2274,11 @@ body {
   justify-content: center;
   margin: 4.8rem 2rem;
 }
+@media all and (min-width: 1000px) {
+  .roomSection {
+    display: none;
+  }
+}
 .roomSection__subtitle {
   font-family: "Archivo", sans-serif;
   font-style: normal;
@@ -2308,9 +2313,85 @@ body {
   line-height: 2rem;
 }
 
+.roomSectionDesktop {
+  display: inline-block;
+  width: 45%;
+  margin: 10rem 2% 0 10%;
+}
+@media all and (max-width: 999px) {
+  .roomSectionDesktop {
+    display: none;
+  }
+}
+.roomSectionDesktop__container {
+  width: 95%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+}
+.roomSectionDesktop__container__subcontainer__title {
+  margin-top: 1.2rem;
+  font-family: "Old Standard TT", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.144rem;
+  color: #222222;
+}
+.roomSectionDesktop__container__subcontainer__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.28rem;
+  color: #777777;
+}
+.roomSectionDesktop__container__price {
+  padding: 1.6rem 0;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #BEAD8E;
+}
+.roomSectionDesktop__container__price--perNight {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.roomSectionDesktop__roomImg {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  top: -5rem;
+  z-index: -1;
+}
+.roomSectionDesktop__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.054rem;
+  color: #777777;
+}
+
 .singleRoomAvailabilitySection {
   width: 90%;
   margin: auto;
+}
+@media all and (min-width: 1000px) {
+  .singleRoomAvailabilitySection {
+    width: 30%;
+    display: inline-block;
+    margin-right: 10%;
+    vertical-align: top;
+    margin-top: 15rem;
+  }
 }
 .singleRoomAvailabilitySection__subtitle {
   text-align: center;
@@ -2366,11 +2447,24 @@ body {
   letter-spacing: 0.054rem;
   color: #777777;
 }
+@media all and (min-width: 1000px) {
+  .singleRoomAvailabilitySection__text {
+    display: none;
+  }
+}
 
 .amenitiesSection {
   width: 90%;
   margin: auto;
   padding-top: 6rem;
+}
+@media all and (min-width: 1000px) {
+  .amenitiesSection {
+    width: 80%;
+    margin: auto;
+    padding-top: 10rem;
+    padding-right: 20%;
+  }
 }
 .amenitiesSection__separation {
   width: 100%;
@@ -2394,11 +2488,21 @@ body {
   flex-wrap: wrap;
   gap: 1.7rem;
 }
+@media all and (min-width: 1000px) {
+  .amenitiesSection__container {
+    justify-content: flex-start;
+  }
+}
 .amenitiesSection__container__subcontainer {
   display: flex;
   flex-direction: row;
   gap: 0.8rem;
   width: 46%;
+}
+@media all and (min-width: 1000px) {
+  .amenitiesSection__container__subcontainer {
+    width: 25%;
+  }
 }
 .amenitiesSection__container__subcontainer__img {
   width: 1.8rem;
@@ -2419,10 +2523,30 @@ body {
   width: 80%;
   margin: auto;
 }
+@media all and (min-width: 1000px) {
+  .employeeSection__container {
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 9rem;
+    padding: 6rem 2.5rem 4rem 2.5rem;
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+  }
+}
 .employeeSection__container__imgContainer {
   position: relative;
   width: 150px;
   margin: 0 auto;
+}
+@media screen and (min-width: 641px) and (max-width: 999px) {
+  .employeeSection__container__imgContainer {
+    width: 30%;
+    margin: auto;
+  }
+}
+@media all and (min-width: 1000px) {
+  .employeeSection__container__imgContainer {
+    width: 100%;
+  }
 }
 .employeeSection__container__imgContainer__portrait {
   width: 15rem;
@@ -2478,6 +2602,15 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection {
+    max-width: 90%;
+    margin: auto;
+    text-align: unset;
+    display: block;
+    transform: none;
+  }
+}
 .relatedRoomsSection > h1 {
   text-align: left;
 }
@@ -2486,6 +2619,12 @@ body {
   position: relative;
   max-width: 100%;
   height: fit-content;
+}
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection .roomSlider__slides,
+  .relatedRoomsSection .swiper {
+    display: none;
+  }
 }
 .relatedRoomsSection .roomSlider__slides-button-prev, .relatedRoomsSection .roomSlider__slides-button-next,
 .relatedRoomsSection .swiper-button-prev,
@@ -2542,12 +2681,25 @@ body {
   bottom: auto;
   z-index: 10;
 }
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection .roomSlider__slides--extras,
+  .relatedRoomsSection .swiper--extras {
+    opacity: 1;
+  }
+}
 .relatedRoomsSection .roomSlider__slides--roomImg,
 .relatedRoomsSection .swiper--roomImg {
   width: 100%;
   height: 25rem;
   object-fit: cover;
   max-width: 100%;
+}
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection .roomSlider__slides--roomImg,
+  .relatedRoomsSection .swiper--roomImg {
+    max-width: 30%;
+    display: inline-block;
+  }
 }
 .relatedRoomsSection .roomSlider__slides--title,
 .relatedRoomsSection .swiper--title {
@@ -2565,6 +2717,14 @@ body {
   letter-spacing: -0.12rem;
   color: #222222;
 }
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection .roomSlider__slides--title,
+  .relatedRoomsSection .swiper--title {
+    opacity: 1;
+    display: inline-block;
+    width: 25%;
+  }
+}
 .relatedRoomsSection .roomSlider__slides--description,
 .relatedRoomsSection .swiper--description {
   padding: 1.6rem 5rem 2rem 5rem;
@@ -2574,6 +2734,14 @@ body {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: #777777;
+}
+@media all and (min-width: 1000px) {
+  .relatedRoomsSection .roomSlider__slides--description,
+  .relatedRoomsSection .swiper--description {
+    opacity: 1;
+    display: inline-block;
+    width: 25%;
+  }
 }
 .relatedRoomsSection .roomSlider__slides__container,
 .relatedRoomsSection .swiper__container {
@@ -2625,6 +2793,11 @@ body {
   max-width: 30rem;
   height: fit-content;
   text-align: center;
+}
+@media all and (max-width: 999px) {
+  .relatedRoomsSection__swiper__slide {
+    display: none;
+  }
 }
 .relatedRoomsSection__swiper__slide__extras {
   position: absolute;
@@ -2700,6 +2873,17 @@ body {
 .relatedRoomsSection__swiper__slide__container__bookNow:hover {
   cursor: pointer;
   color: #111111;
+}
+
+@media all and (min-width: 1000px) {
+  .cancellationSection {
+    padding-right: 20%;
+    display: block;
+    transform: none;
+  }
+}
+.cancellationSection__text {
+  display: block;
 }
 
 .offerRoomSection {
