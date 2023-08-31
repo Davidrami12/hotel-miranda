@@ -36,7 +36,6 @@
         flex-direction: row;
         justify-content: space-around;
 
-        //Meter inline blocks a todo esto!!
         @include mq.desktop {
             display: inline-block;
             padding-right: 5%;
